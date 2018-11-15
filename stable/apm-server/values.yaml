@@ -114,6 +114,9 @@ nodeSelector: {}
 ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
 affinity: {}
 
+service: {}
+  # type: ClusterIP
+  # port: 80
 rbac:
   # Specifies whether RBAC resources should be created
   create: true
