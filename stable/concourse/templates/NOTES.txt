@@ -53,7 +53,7 @@ Please see https://github.com/concourse/concourse/issues/1230 and https://github
 
 
 
-{{- if .Values.concourse.web.localAuth.enabled }}
+{{- if and .Values.concourse.web.localAuth.enabled .Values.secrets.create }}
 {{- if contains "test:test" .Values.secrets.localUsers }}
 
 *******************
